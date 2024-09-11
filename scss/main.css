@@ -1,0 +1,67 @@
+/*
+font-family: "Poppins", sans-serif;
+font-family: "Montserrat", sans-serif;
+ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+font-family: "Poppins", sans-serif;
+font-family: "Montserrat", sans-serif;
+ */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+}
+
+.none {
+  display: none !important;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icon {
+  /*  padding: rem(26) 0 rem(26) rem(90);*/
+  padding-top: calc(15px + 11 * (100vw - 320px) / 1120);
+  padding-bottom: calc(15px + 11 * (100vw - 320px) / 1120);
+  padding-left: calc(15px + 75 * (100vw - 320px) / 1120);
+}
+.header__icon img {
+  width: calc(144px + 62 * (100vw - 320px) / 1120);
+}
+
+.nav {
+  /*  padding: rem(63) 0;*/
+  padding-top: calc(15px + 48 * (100vw - 320px) / 1120);
+  padding-bottom: calc(15px + 48 * (100vw - 320px) / 1120);
+}
+
+.nav__navbar {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #252B42;
+}
+.nav__navbar li {
+  /*    padding: 0 rem(52);*/
+  padding-left: calc(15px + 37 * (100vw - 320px) / 1120);
+  padding-right: calc(15px + 37 * (100vw - 320px) / 1120);
+}
+.nav__navbar li a:focus {
+  color: #FA4A0C;
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */

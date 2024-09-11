@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icon {
+/*  padding: rem(26) 0 rem(26) rem(90);*/
+  @include adaptive-value('padding-top', 26, 15);
+  @include adaptive-value('padding-bottom', 26, 15);
+  @include adaptive-value('padding-left', 90, 15);
+
+  img {
+    @include adaptive-value('width', 206, 144);
+  }
+}
+
+.nav {
+/*  padding: rem(63) 0;*/
+  @include adaptive-value('padding-top', 63, 15);
+  @include adaptive-value('padding-bottom', 63, 15);
+}
+
+.nav__navbar {
+  display: flex;
+  align-items: center;
+  font-weight: $font-weight-semi-bold;
+  color: $color-heading;
+
+  li {
+/*    padding: 0 rem(52);*/
+  @include adaptive-value('padding-left', 52, 15);
+  @include adaptive-value('padding-right', 52, 15);
+}
+
+li a:focus {
+color: $color-accent;
+outline: none;
+}
+}
