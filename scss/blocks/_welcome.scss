@@ -1,0 +1,52 @@
+.welcome {
+  height: 618px;
+}
+
+.welcome__img-container {
+  height: 100%;
+  background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/welcome/background-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome__container {
+  color: $white;
+  text-align: center;
+  padding: adaptive-value-func(73, 25) adaptive-value-func(251, 15);
+
+}
+
+.welcome__text {
+}
+
+.welcome__text-food_app {
+  font-weight: $font-weight-bold;
+  color: $color-secondary-white;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.welcome__text-heading {
+  font-family: $font-secondary;
+  line-height: adaptive-value-func(80, 50);
+  font-weight: $font-weight-bold;
+  font-size: adaptive-value-func(58, 35);
+}
+
+.welcome__text-download_info {
+  line-height: 38px;
+  font-size: 24px;
+  color: $color-secondary-white;
+  font-weight: 500;
+}
+
+.welcome__buttons {
+}
+
+.welcome__buttons-playstore {
+}
+
+.welcome__buttons-appstore {
+}

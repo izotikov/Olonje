@@ -30,3 +30,11 @@ $maxWidthContainer: 1170;
     #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
   }
 }
+
+@function adaptive-value-func($startSize, $minSize) {
+  $addSize: $startSize - $minSize;
+
+  $result: calc(#{$minSize + px} + $addSize * (calc(100vw - 320px)) / calc($maxWidth - 320));
+
+  @return $result;
+}
