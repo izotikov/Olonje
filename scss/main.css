@@ -85,6 +85,7 @@ body {
   color: #F6F6F6;
   font-size: 24px;
   line-height: 36px;
+  padding-bottom: 7px;
 }
 
 .welcome__text-heading {
@@ -97,8 +98,61 @@ body {
 .welcome__text-download_info {
   line-height: 38px;
   font-size: 24px;
+  padding-top: 17px;
   color: #F6F6F6;
   font-weight: 500;
+}
+
+.welcome__buttons {
+  padding-top: calc(15px + 39 * (100vw - 320px) / 1120);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+  gap: calc(14px + 20 * (100vw - 320px) / 1120);
+  justify-content: center;
+  position: relative;
+  left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .welcome__buttons {
+    left: 0;
+  }
+}
+
+.welcome__button-container button {
+  color: inherit;
+  cursor: pointer;
+  padding: 16px 58px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.welcome__button-container:first-child {
+  text-align: end;
+}
+@media screen and (max-width: 768px) {
+  .welcome__button-container:first-child {
+    text-align: center;
+  }
+}
+.welcome__button-container:last-child {
+  text-align: start;
+}
+@media screen and (max-width: 768px) {
+  .welcome__button-container:last-child {
+    text-align: center;
+  }
+}
+
+.welcome__buttons-playstore {
+  background-color: #FA4A0C;
+  box-shadow: 0 10px 30px rgba(183, 50, 39, 0.2);
+  border: none;
+}
+
+.welcome__buttons-appstore {
+  outline: 1px solid white;
+  background-color: transparent;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */

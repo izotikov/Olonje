@@ -38,3 +38,7 @@ $maxWidthContainer: 1170;
 
   @return $result;
 }
+
+@function rem($pxval, $base: 16) {
+  @return ($pxval / $base) * 1rem;
+}

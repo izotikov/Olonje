@@ -26,6 +26,7 @@
   color: $color-secondary-white;
   font-size: 24px;
   line-height: 36px;
+  padding-bottom: 7px;
 }
 
 .welcome__text-heading {
@@ -38,15 +39,63 @@
 .welcome__text-download_info {
   line-height: 38px;
   font-size: 24px;
+  padding-top: 17px;
   color: $color-secondary-white;
   font-weight: 500;
 }
 
 .welcome__buttons {
+
+  padding-top: adaptive-value-func(54, 15);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+  gap: adaptive-value-func(34, 14);
+  justify-content: center;
+  position: relative;
+  left: 50px;
+
+  @include mediaTablet {
+    left: 0;
+  }
+}
+
+.welcome__button-container {
+
+  button {
+    color: inherit;
+    cursor: pointer;
+    padding: 16px 58px;
+    border-radius: 30px;
+    font-weight: $font-weight-bold;
+    font-size: 24px;
+  }
+
+  &:first-child {
+    text-align: end;
+
+    @include mediaTablet {
+      text-align: center;
+    }
+  }
+
+  &:last-child {
+    text-align: start;
+
+    @include mediaTablet {
+      text-align: center;
+    }
+  }
 }
 
 .welcome__buttons-playstore {
+  background-color: $color-accent;
+  box-shadow: 0 10px 30px rgba(183, 50, 39, 0.2);
+  border: none;
+
 }
 
 .welcome__buttons-appstore {
+  outline: 1px solid white;
+  background-color: transparent;
+  border: none;
 }
