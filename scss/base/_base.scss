@@ -6,6 +6,11 @@ body {
   font-family: $font-main;
 }
 
+::-webkit-scrollbar {
+  width: 0; /* remove scrollbar space */
+  background-color: transparent;
+}
+
 a {
 
 }
@@ -26,3 +31,4 @@ a {
 .no-scroll {
   overflow-y: hidden;
 }
+

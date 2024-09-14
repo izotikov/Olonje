@@ -2,6 +2,7 @@
   height: 618px;
 }
 
+
 .welcome__img-container {
   height: 100%;
   background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/welcome/background-img.png");
@@ -15,7 +16,6 @@
   color: $white;
   text-align: center;
   padding: adaptive-value-func(73, 25) adaptive-value-func(251, 15);
-
 }
 
 .welcome__text {
@@ -98,4 +98,26 @@
   outline: 1px solid white;
   background-color: transparent;
   border: none;
+}
+
+.mobile-images {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #E4E4E4;
+  max-width: 884px;
+  padding-bottom: adaptive-value-func(60, 30);
+}
+
+.mobile-images__orange-photo {
+  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.21));
+  position: relative;
+  bottom: 104px;
+  left: 35px;
+  z-index: 3;
+}
+
+.mobile-images__white-photo {
+  position: relative;
+  bottom: 50px;
 }
