@@ -155,6 +155,10 @@ body {
   border: none;
 }
 
+.about-app {
+  text-align: center;
+}
+
 .mobile-images {
   margin: 0 auto;
   display: flex;
@@ -175,6 +179,55 @@ body {
 .mobile-images__white-photo {
   position: relative;
   bottom: 50px;
+}
+
+.about-app__header {
+  margin: calc(30px + 42 * (100vw - 320px) / 1120) 0 calc(25px + 112 * (100vw - 320px) / 1120) 0;
+  opacity: 0.8;
+  font-size: 44px;
+  line-height: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.about-app__main {
+  display: flex;
+  padding-left: calc(15px + 230 * (100vw - 320px) / 1120);
+}
+.about-app__main img {
+  padding-right: calc(15px + 156 * (100vw - 320px) / 1120);
+  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+}
+
+.about-app__main-create-acc__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-app__main-create-acc__heading-red {
+  color: #FA4A0C;
+  line-height: 36px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.about-app__main-create-acc__heading-black {
+  color: #252B42;
+  font-weight: 700;
+  line-height: 57px;
+  font-size: 40px;
+  max-width: 49rem;
+  padding: 17px 0;
+}
+
+.about-app__main-create-acc__description {
+  color: #737373;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+  max-width: 29rem;
 }
 
 /*# sourceMappingURL=main.css.map */

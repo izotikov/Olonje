@@ -1,0 +1,79 @@
+.about-app {
+  text-align: center;
+}
+
+
+.mobile-images {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #E4E4E4;
+  max-width: 884px;
+  padding-bottom: adaptive-value-func(60, 30);
+}
+
+.mobile-images__orange-photo {
+  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.21));
+  position: relative;
+  bottom: 104px;
+  left: 35px;
+  z-index: 3;
+}
+
+.mobile-images__white-photo {
+  position: relative;
+  bottom: 50px;
+}
+
+.about-app__header {
+  margin: adaptive-value-func(72, 30) 0 adaptive-value-func(137, 25) 0;
+  opacity: 0.8;
+  font-size: 44px;
+  line-height: 36px;
+  font-family: $font-secondary;
+  font-weight: $font-weight-semi-bold;
+}
+
+.about-app__main {
+  display: flex;
+  padding-left: adaptive-value-func(245, 15);
+
+  img {
+    padding-right: adaptive-value-func(171, 15);
+    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+
+  }
+
+}
+
+.about-app__main-create-acc__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-app__main-create-acc__heading-red {
+  color: $color-accent;
+  line-height: 36px;
+  font-weight: $font-weight-bold;
+  font-size: 24px;
+}
+
+.about-app__main-create-acc__heading-black {
+  color: $color-heading;
+  font-weight: $font-weight-bold;
+  line-height: 57px;
+  font-size: 40px;
+  max-width: 49rem;
+  padding: 17px 0;
+}
+
+.about-app__main-create-acc__description {
+  color: $color-desc;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: $font-weight-medium;
+  max-width: 29rem;
+
+}
