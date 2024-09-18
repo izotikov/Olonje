@@ -27,6 +27,10 @@ body {
   overflow-y: hidden;
 }
 
+.no-transfer {
+  white-space: nowrap;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -157,6 +161,7 @@ body {
 
 .about-app {
   text-align: center;
+  margin-bottom: calc(30px + 101 * (100vw - 320px) / 1120);
 }
 
 .mobile-images {
@@ -182,7 +187,7 @@ body {
 }
 
 .about-app__header {
-  margin: calc(30px + 42 * (100vw - 320px) / 1120) 0 calc(25px + 112 * (100vw - 320px) / 1120) 0;
+  margin: calc(30px + 42 * (100vw - 320px) / 1120) 0 calc(20px + 117 * (100vw - 320px) / 1120) 0;
   opacity: 0.8;
   font-size: 44px;
   line-height: 36px;
@@ -193,9 +198,9 @@ body {
 .about-app__main {
   display: flex;
   padding-left: calc(15px + 230 * (100vw - 320px) / 1120);
+  gap: calc(15px + 156 * (100vw - 320px) / 1120);
 }
 .about-app__main img {
-  padding-right: calc(15px + 156 * (100vw - 320px) / 1120);
   filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
 }
 
@@ -204,6 +209,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  max-width: 35.0625rem;
 }
 
 .about-app__main-create-acc__heading-red {
