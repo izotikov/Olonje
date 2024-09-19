@@ -1,0 +1,93 @@
+.download-app {
+  height: 516px;
+}
+
+.download-app__img-container {
+  height: 100%;
+  background-image:linear-gradient( rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url("../../img/download-app/background-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.download-app__container {
+  color: $white;
+  text-align: center;
+  padding: adaptive-value-func(130, 25) adaptive-value-func(290, 15);
+}
+
+.download-app__text {
+
+}
+
+.download-app__text-heading {
+  font-size: 40px;
+  font-weight: $font-weight-bold;
+  line-height: 57px;
+  padding-bottom: 10px;
+}
+
+.download-app__text-download_info {
+  font-size: 24px;
+  font-weight: $font-weight-medium;
+  line-height: 38px;
+}
+
+.download-app__buttons {
+  padding-top: adaptive-value-func(50, 15);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+}
+
+.download-app__button-container {
+
+  button {
+    color: inherit;
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.1s ease-in;
+    }
+  }
+
+  &:first-child {
+    text-align: end;
+
+    @include mediaTablet {
+      text-align: center;
+    }
+  }
+
+  &:last-child {
+    text-align: start;
+
+    @include mediaTablet {
+      text-align: center;
+    }
+  }
+}
+
+.download-app__buttons-playstore {
+  padding: 16px 31px;
+  background-color: $color-accent;
+  box-shadow: 0 10px 30px rgba(183, 50, 39, 0.2);
+  border: none;
+}
+
+.download-app__buttons-appstore {
+  padding: 16px 45px;
+  outline: 1px solid white;
+  background-color: transparent;
+  border: none;
+  white-space: nowrap;
+}

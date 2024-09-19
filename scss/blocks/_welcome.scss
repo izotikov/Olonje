@@ -65,7 +65,14 @@
     border-radius: 30px;
     font-weight: $font-weight-bold;
     font-size: 24px;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.1s ease-in;
+    }
   }
+
 
   &:first-child {
     text-align: end;
@@ -95,4 +102,5 @@
   outline: 1px solid white;
   background-color: transparent;
   border: none;
+  white-space: nowrap;
 }

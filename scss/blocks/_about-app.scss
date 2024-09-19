@@ -11,6 +11,17 @@
   border-bottom: 3px solid #E4E4E4;
   max-width: 884px;
   padding-bottom: adaptive-value-func(60, 30);
+
+  &.element-animation {
+    transform: translateY(20px);
+
+    &.element-show {
+      opacity: 1;
+      transition: all 1.5s;
+      transform: translateY(0%) translateX(0%);
+    }
+  }
+
 }
 
 .mobile-images__orange-photo {
@@ -42,6 +53,11 @@
 
   img {
     filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+
+    &.element-show {
+      opacity: 1;
+      transition: 1.5s ease-in;
+    }
 
   }
 
